@@ -12,7 +12,7 @@ class User < ApplicationRecord
          jwt_revocation_strategy: self
 
   # - VALIDATIONS
-  validates_presence_of :email, :first_name
+  validates_presence_of :email, :user_name
   validates_length_of :email, minimum: 4, maximum: 255
 
   # TODO CHECK
